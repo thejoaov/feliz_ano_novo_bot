@@ -7,9 +7,8 @@ from utils import send_message
 
 
 CONTACTS = [
-    'Adailson',
-    'Tio Anderson',
-    'Tia Gorete'
+    'Me, myself and i',
+    'Giovana'
 ]
 
 print('Abrindo o webdriver')

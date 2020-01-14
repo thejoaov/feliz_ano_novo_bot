@@ -30,7 +30,7 @@ def send_message(driver, contact_name='Neném', image_number=1):
     attach_message = driver.find_element_by_class_name('_3u328')
     print(f'Escrevendo mensagem para {contact_name}:')
     print(f'{contact_name}, {message}')
-    attach_message.send_keys(f'{contact_name}, {mensage}')
+    attach_message.send_keys(f'{contact_name}, {message}')
     time.sleep(1)
     send_attach_button = driver.find_element_by_class_name('_1g8sv')
     send_attach_button.click()
