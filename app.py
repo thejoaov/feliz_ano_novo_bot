@@ -7,22 +7,9 @@ from utils import send_message
 
 
 CONTACTS = [
-    'Larissa (Vik)',
-    'Lucas Artes',
-    'Gustavo [IFPI]',
-    'Luiz [NTHE]',
-    'Sthayllon',
-    'Iana',
-    'Igor Max (Vik)',
-    'Hayssa Campelo',
-    'Felipe (IFPI)',
-    'Bárbara (Vik)',
-    'Washington Jr',
-    'Anna IFPI',
-    'Gisele (Vik)',
-    'Raianne',
-    'Rômulo',
-    'Valclides',
+    'Adailson',
+    'Tio Anderson',
+    'Tia Gorete'
 ]
 
 print('Abrindo o webdriver')
@@ -32,5 +19,4 @@ print('Esperando a leitura do QRCode')
 time.sleep(15)
 
 for contact_name in CONTACTS:
-    image_number = random.randint(1, 43)
-    send_message(driver, contact_name, image_number)
+    send_message(driver, contact_name, 1)
