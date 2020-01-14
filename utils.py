@@ -16,9 +16,8 @@ def send_message(driver, contact_name='Neném', image_number=1):
     contact = driver.find_element_by_xpath(
         f'//span[@title = "{contact_name}" and @class="_19RFN _1ovWX _F7Vk"]')
     contact.click()
-    print(f'Achei o {contact_name}!')
+    print(f'Achei o contato "{contact_name}"!')
     time.sleep(2)
-
     attach_button = driver.find_element_by_xpath(ATTACHMENT_XPATH)
     attach_button.click()
     print(f'Enviando foto para {contact_name}')
